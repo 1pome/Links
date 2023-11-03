@@ -1,8 +1,8 @@
-export const SUBTITLE = "A free clone of LinkTree"
-export const TITLE = "LinkTreeFreeClone"
-export const TAGLINE = "Make your own LinkTree page for free"
+export const SUBTITLE = "Viajes y transporte"
+export const TITLE = "Turismo Mar Y Sol"
+export const TAGLINE = "Estos son nuestros medios de contacto"
 
 // Contacts
-export const contact = "Keep in touch"
-export const phone = "+33600000000"
-export const email = "contact@yoandev.co"
+export const contact = ""
+export const phone = "+5491160418111"
+export const email = "marysol.encuentro@gmail.com"
