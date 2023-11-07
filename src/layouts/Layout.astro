@@ -4,12 +4,41 @@ export interface Props {
 }
 
 const { title } = Astro.props;
+import { AstroSeo } from "@astrolib/seo";
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="UTF-8" />
+		<AstroSeo
+			title="Turismo Mar y Sol"
+			description="Embárcate en una emocionante aventura por Argentina con nuestra empresa familiar de turismo. Desde los impresionantes paisajes de Tandil, Buenos Aires, hasta la relajación en las termas de Entre Ríos, y desde la majestuosidad de Bariloche hasta la belleza de la costa atlántica, ofrecemos una amplia variedad de destinos y experiencias únicas. Nuestra agencia de turismo se especializa en crear itinerarios personalizados que te permiten explorar las maravillas de Argentina a tu propio ritmo. Ya sea que estés interesado en acampar en Santa Teresita o disfrutar de las atracciones de Villa Carlos Paz, nuestro equipo de expertos locales está listo para acompañarte en cada paso del camino. Como empresa familiar, entendemos la importancia de crear recuerdos duraderos para ti y tus seres queridos. Te invitamos a unirte a nosotros y sumergirte en la autenticidad de Argentina mientras exploras nuestros emocionantes destinos. ¡Ven y descubre la diversidad de Argentina con nosotros!"
+			canonical="https://turismomarysol.com.ar/"
+			openGraph={{
+				url: 'https://turismomarysol.com.ar/',
+				title: 'Turismo Mar y Sol',
+				description: 'Embárcate en una emocionante aventura por Argentina con nuestra empresa familiar de turismo. Desde los impresionantes paisajes de Tandil, Buenos Aires, hasta la relajación en las termas de Entre Ríos, y desde la majestuosidad de Bariloche hasta la belleza de la costa atlántica, ofrecemos una amplia variedad de destinos y experiencias únicas. Nuestra agencia de turismo se especializa en crear itinerarios personalizados que te permiten explorar las maravillas de Argentina a tu propio ritmo. Ya sea que estés interesado en acampar en Santa Teresita o disfrutar de las atracciones de Villa Carlos Paz, nuestro equipo de expertos locales está listo para acompañarte en cada paso del camino. Como empresa familiar, entendemos la importancia de crear recuerdos duraderos para ti y tus seres queridos. Te invitamos a unirte a nosotros y sumergirte en la autenticidad de Argentina mientras exploras nuestros emocionantes destinos. ¡Ven y descubre la diversidad de Argentina con nosotros!',
+				images: [
+				{
+					url: 'https://cdn.discordapp.com/attachments/894606077176475648/1170134522520678480/images.png',
+					width: 800,
+					height: 600,
+					alt: 'Turismo Mar y Sol',
+					type: 'image/png',
+				},
+				{
+					url: 'https://scontent-eze1-1.xx.fbcdn.net/v/t39.30808-6/307377912_1192498421307885_7909272879772676472_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHx8OEK2keOizkaF_drRdpBTC97nkUbPfJML3ueRRs98lTSDfAvUHXW9iyFnns9N19qWdkOvQjDePPIqNocQyJ-&_nc_ohc=24XeQr1-lWkAX_tFg_b&_nc_ht=scontent-eze1-1.xx&oh=00_AfD9LnVDW5WkUNG4m1v8jk6gICeIZDMU7UkpftTggWhMAg&oe=654F33D1',
+					width: 900,
+					height: 800,
+					alt: 'Turismo Mar y Sol',
+					type: 'image/jpg',
+				},
+				{ url: 'https://turismomarysol.com.ar/avatar.jpg' },
+				],
+				site_name: 'Turismo Mar y Sol',
+			}}
+		/>
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/avatar.jpg" />
 		<meta name="generator" content={Astro.generator} />
